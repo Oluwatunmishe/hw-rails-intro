@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Rottenpotatoes
   class Application < Rails::Application
+    config.secret_key_base = "anyrandomlongstringhere123456789012345678901234567890"
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
