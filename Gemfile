@@ -4,7 +4,7 @@ ruby "3.3.8"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5"
-gem "pg"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -64,6 +64,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+end
+
+group :production do
+  gem 'pg'
 end
 
 # These gems are used in production environments, such as Heroku
