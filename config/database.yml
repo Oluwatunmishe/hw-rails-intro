@@ -23,5 +23,5 @@ test:
 production:
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['postgresql://su26_chips_4_8_oa_user:c61SwzY4cq0GhUYE4aQNRS21yKy5iR1Y@dpg-d9c64t3tqb8s73afgskg-a/su26_chips_4_8_oa'] %>
   
