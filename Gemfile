@@ -4,6 +4,7 @@ ruby "3.3.8"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5"
+gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -68,6 +69,6 @@ end
 # These gems are used in production environments, such as Heroku
 # We do not want to use sqlite3 in production, so we use the pg gem instead
 # See https://devcenter.heroku.com/articles/getting-started-with-rails7#provision-a-database
-group :production do
-  gem "pg"
-end
+
+  
+
